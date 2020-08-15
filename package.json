@@ -19,6 +19,7 @@
     "watch": "^1.0.2"
   },
   "scripts": {
+    "dev": "watch \"npm run format\" src",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
