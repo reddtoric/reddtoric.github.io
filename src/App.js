@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container";
 import Intro from "sections/Intro";
 import AboutMe from "sections/AboutMe";
 import Skills from "sections/Skills";
+import Projects from "sections/Projects";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ export default class App extends React.Component {
 
     this.aboutMeRef = React.createRef();
     this.skillsRef = React.createRef();
+    this.projectsRef = React.createRef();
 
     this.sections = [
       {
@@ -24,8 +26,8 @@ export default class App extends React.Component {
       },
       {
         title: "Projects",
-        ref: React.createRef(),
-        section: null,
+        ref: this.projectsRef,
+        section: <Projects ref={this.projectsRef} />,
       },
     ];
   }
