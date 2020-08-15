@@ -12,6 +12,7 @@
     "eslint-plugin-import": "^2.22.0",
     "fontsource-open-sans": "^3.0.3",
     "fontsource-roboto-mono": "^3.0.3",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
