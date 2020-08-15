@@ -19,6 +19,10 @@ body {
   color: #1e90ff;
 }
 
+.button-icon-group-border-color {
+  border-color: #1e90ff;
+}
+
 .mono-font {
   font-family: "Roboto Mono", monospace;
 }
