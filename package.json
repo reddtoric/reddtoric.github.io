@@ -9,7 +9,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "eslint-plugin-import": "^2.22.0",
     "fontsource-open-sans": "^3.0.3",
     "fontsource-roboto-mono": "^3.0.3",
     "prettier": "^2.0.5",
@@ -27,16 +26,7 @@
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "eslintConfig": {
-    "extends": "react-app",
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "paths": [
-            "src"
-          ]
-        }
-      }
-    }
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
