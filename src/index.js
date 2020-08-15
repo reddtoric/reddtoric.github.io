@@ -3,10 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import "fontsource-roboto-mono";
+import "fontsource-open-sans/400-normal.css";
+import "fontsource-open-sans/800-normal.css";
+import { StylesProvider } from "@material-ui/core/styles";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StylesProvider injectFirst>
+      <App />
+    </StylesProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
