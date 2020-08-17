@@ -7,7 +7,7 @@ export default [
       }
       (required) title: "title of project"
       (required) description: "description of project",
-      (optional) homepage: "homepage",
+      (optional) homepage: "homepage href",
       (required, provide at least 1) links: {
           (optional) git: "git link",
           (optional) playstore: "playstore link",

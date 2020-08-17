@@ -53,6 +53,26 @@ const useStyles = makeStyles((theme) => ({
   gitInfo: {},
 }));
 
+/*
+  Summary: Return project card using Custom Card
+  Props:
+    project: {
+      (optional) avatar: {
+        (required) alt: "alternative text for image",
+        (required) src: "path/to/image.png",
+      }
+      (required) title: "title of project"
+      (required) description: "description of project",
+      (optional) homepage: "homepage href",
+      (required, provide at least 1) links: {
+        (optional) git: "git link",
+        (optional) playstore: "playstore link",
+        (optional) play: "play game link",
+        (optional) preview: "preview link",
+      },
+    }
+*/
+
 export default function ProjectCard(props) {
   const classes = useStyles();
 

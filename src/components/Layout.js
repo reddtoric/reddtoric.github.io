@@ -15,6 +15,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/*
+  Summary: Return Layout for a section
+  Props: 
+    children,
+    title: "string",
+    hideTitle: (optional) bool,
+    description: "string",
+    hideDescription: (optional) bool
+*/
+
 export default React.forwardRef((props, ref) => {
   const classes = useStyles();
 

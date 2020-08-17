@@ -4,6 +4,18 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Tooltip from "@material-ui/core/Tooltip";
 import Icon from "@mdi/react";
 
+/*
+  Summary: Returns Material UI primary colored outlined icon button group with tooltip.
+  Props:
+    buttons: [
+      {
+        tooltip: "tool tip of button",
+        icon: material design icon,
+        href: "button href",
+      },
+    ],
+*/
+
 export default (props) => {
   return (
     <ButtonGroup aria-label="outlined button group">

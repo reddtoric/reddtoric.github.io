@@ -4,6 +4,8 @@ import Layout from "components/Layout";
 import ButtonIconGroup from "components/ButtonIconGroup";
 import DataSocials from "data/Data-Socials";
 
+// My About me section
+
 export default React.forwardRef((props, ref) => {
   return (
     <Layout title="About me" hideTitle description="" hideDescription ref={ref}>

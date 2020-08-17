@@ -5,6 +5,8 @@ import AboutMe from "sections/AboutMe";
 import Skills from "sections/Skills";
 import Projects from "sections/Projects";
 
+// Render website with all 4 sections
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);

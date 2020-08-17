@@ -15,6 +15,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/*
+  Summary: Return Skill card using Custom Card
+  Props:  
+    skill: {
+      icon: material design icon,
+      skill: "skill name",
+    }
+*/
+
 export default (props) => {
   const classes = useStyles();
 

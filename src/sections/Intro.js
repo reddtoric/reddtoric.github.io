@@ -35,6 +35,24 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// My Intro section
+
+export default React.forwardRef((props, ref) => {
+  const classes = useStyles();
+
+  return (
+    <Layout title="Intro" hideTitle description="" hideDescription ref={ref}>
+      <Box className={classes.flexVertical}>
+        <NameTitle>Edward Hughes</NameTitle>
+        <Nav sections={props.sections} handleOnClick={props.handleOnClick} />
+        <ProceedButton
+          onClick={() => props.handleOnClick(props.sections[0].ref)}
+        />
+      </Box>
+    </Layout>
+  );
+});
+
 function NameTitle(props) {
   const classes = useStyles();
 
@@ -100,19 +118,3 @@ function ProceedButton(props) {
     </Box>
   );
 }
-
-export default React.forwardRef((props, ref) => {
-  const classes = useStyles();
-
-  return (
-    <Layout title="Intro" hideTitle description="" hideDescription ref={ref}>
-      <Box className={classes.flexVertical}>
-        <NameTitle>Edward Hughes</NameTitle>
-        <Nav sections={props.sections} handleOnClick={props.handleOnClick} />
-        <ProceedButton
-          onClick={() => props.handleOnClick(props.sections[0].ref)}
-        />
-      </Box>
-    </Layout>
-  );
-});

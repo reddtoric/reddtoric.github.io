@@ -19,6 +19,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/*
+  Summary: Returns Material UI Card w/Card Content using card background color.
+  Props: 
+    children
+ */
+
 export default (props) => {
   const classes = useStyles();
 

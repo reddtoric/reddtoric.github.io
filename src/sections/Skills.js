@@ -4,6 +4,8 @@ import Layout from "components/Layout";
 import SkillCard from "components/SkillCard";
 import DataSkills from "data/Data-Skills";
 
+// My Skills section
+
 export default React.forwardRef((props, ref) => {
   return (
     <Layout
