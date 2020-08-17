@@ -22,7 +22,7 @@ export default [
       src: "icon.png",
     },
     title: "EdDevs.com",
-    description: "Portfolio of things I've built.",
+    description: "Portfolio of applications I developed.",
     links: {
       git: "https://github.com/reddtoric/reddtoric.github.io",
     },
