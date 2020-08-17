@@ -32,9 +32,9 @@ export default class App extends React.Component {
     ];
   }
 
-  handleOnClick(scrollTo) {
-    if (scrollTo.current) {
-      scrollTo.current.scrollIntoView({
+  scrollTo(ref) {
+    if (ref.current) {
+      ref.current.scrollIntoView({
         behavior: "smooth",
         block: "nearest",
       });
@@ -45,7 +45,7 @@ export default class App extends React.Component {
     return (
       <Container className="runner-bg-color">
         <Container maxWidth="md">
-          <Intro sections={this.sections} handleOnClick={this.handleOnClick} />
+          <Intro sections={this.sections} handleOnClick={this.scrollTo} />
 
           {this.sections.map((section, index) => {
             return section.section;

@@ -40,7 +40,7 @@ function NameTitle(props) {
 
   return (
     <Box component="h1" className={classes.nameTitle}>
-      {props.name}
+      {props.children}
     </Box>
   );
 }
@@ -107,7 +107,7 @@ export default React.forwardRef((props, ref) => {
   return (
     <Layout title="Intro" hideTitle description="" hideDescription ref={ref}>
       <Box className={classes.flexVertical}>
-        <NameTitle name="Edward Hughes" />
+        <NameTitle>Edward Hughes</NameTitle>
         <Nav sections={props.sections} handleOnClick={props.handleOnClick} />
         <ProceedButton
           onClick={() => props.handleOnClick(props.sections[0].ref)}
