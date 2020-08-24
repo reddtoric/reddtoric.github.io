@@ -73,30 +73,28 @@ const useStyles = makeStyles((theme) => ({
     }
 */
 
-export default function ProjectCard(props) {
+export default function ProjectCard({ project }) {
   const classes = useStyles();
 
   return (
     <CustomCard>
-      <TitleRow project={props.project} />
-      <LinksRow links={props.project.links} />
+      <TitleRow project={project} />
+      <LinksRow links={project.links} />
 
-      <Box className={classes.descriptionRowLayout}>
-        {props.project.description}
-      </Box>
+      <Box className={classes.descriptionRowLayout}>{project.description}</Box>
 
-      <ReadMoreRow project={props.project} />
+      <ReadMoreRow project={project} />
     </CustomCard>
   );
 }
 
-function TitleAndGitInfo(props) {
+function TitleAndGitInfo({ project }) {
   const classes = useStyles();
 
   return (
     <Box className={classes.titleAndGitInfoLayout}>
       <Typography variant="body1" component="h3" className={classes.title}>
-        {props.project.title}
+        {project.title}
       </Typography>
       {/*
       <Box>
@@ -108,25 +106,25 @@ function TitleAndGitInfo(props) {
   );
 }
 
-function TitleRow(props) {
+function TitleRow({ project }) {
   const classes = useStyles();
 
-  if (props.project.avatar !== undefined) {
+  if (project.avatar !== undefined) {
     return (
       <Box className={classes.titleRowLayout}>
         <Avatar
-          alt={props.project.avatar.alt}
-          src={props.project.avatar.src}
+          alt={project.avatar.alt}
+          src={project.avatar.src}
           className={classes.icon}
         />
 
-        <TitleAndGitInfo project={props.project} />
+        <TitleAndGitInfo project={project} />
       </Box>
     );
   } else {
     return (
       <Box className={classes.titleRowLayout}>
-        <TitleAndGitInfo project={props.project} />
+        <TitleAndGitInfo project={project} />
       </Box>
     );
   }
@@ -165,13 +163,13 @@ function LinksRow(props) {
   );
 }
 
-function ReadMoreRow(props) {
+function ReadMoreRow({ project }) {
   const classes = useStyles();
 
   return (
     <Box className={classes.readMoreRowLayout}>
-      {props.project.homepage !== undefined ? (
-        <CustomButton href={props.project.homepage}>Read more...</CustomButton>
+      {project.homepage !== undefined ? (
+        <CustomButton href={project.homepage}>Read more...</CustomButton>
       ) : (
         <CustomButton disabled>Read more...</CustomButton>
       )}

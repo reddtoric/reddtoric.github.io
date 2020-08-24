@@ -37,17 +37,15 @@ const useStyles = makeStyles((theme) => ({
 
 // My Intro section
 
-export default React.forwardRef((props, ref) => {
+export default React.forwardRef(({ sections }, ref) => {
   const classes = useStyles();
 
   return (
     <Layout title="Intro" hideTitle description="" hideDescription ref={ref}>
       <Box className={classes.flexVertical}>
         <NameTitle>Edward Hughes</NameTitle>
-        <Nav sections={props.sections} handleOnClick={props.handleOnClick} />
-        <ProceedButton
-          onClick={() => props.handleOnClick(props.sections[0].ref)}
-        />
+        <Nav sections={sections} />
+        <ProceedButton onClick={sections[0].handleOnClick} />
       </Box>
     </Layout>
   );
@@ -87,7 +85,7 @@ function Nav(props) {
           return (
             <React.Fragment key={index}>
               <NavButton
-                onClick={() => props.handleOnClick(section.ref)}
+                onClick={section.handleOnClick}
                 title={section.title}
               />
               <Separator />
@@ -97,7 +95,7 @@ function Nav(props) {
           return (
             <NavButton
               key={index}
-              onClick={() => props.handleOnClick(section.ref)}
+              onClick={section.handleOnClick}
               title={section.title}
             />
           );

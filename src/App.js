@@ -18,18 +18,18 @@ export default class App extends React.Component {
     this.sections = [
       {
         title: "About me",
-        ref: this.aboutMeRef,
-        section: <AboutMe ref={this.aboutMeRef} />,
+        handleOnClick: () => this.scrollTo(this.aboutMeRef),
+        component: <AboutMe ref={this.aboutMeRef} />,
       },
       {
         title: "Skills",
-        ref: this.skillsRef,
-        section: <Skills ref={this.skillsRef} />,
+        handleOnClick: () => this.scrollTo(this.skillsRef),
+        component: <Skills ref={this.skillsRef} />,
       },
       {
         title: "Projects",
-        ref: this.projectsRef,
-        section: <Projects ref={this.projectsRef} />,
+        handleOnClick: () => this.scrollTo(this.projectsRef),
+        component: <Projects ref={this.projectsRef} />,
       },
     ];
   }
@@ -47,10 +47,10 @@ export default class App extends React.Component {
     return (
       <Container className="runner-bg-color">
         <Container maxWidth="md">
-          <Intro sections={this.sections} handleOnClick={this.scrollTo} />
+          <Intro sections={this.sections} />
 
-          {this.sections.map((section, index) => {
-            return section.section;
+          {this.sections.map((section) => {
+            return section.component;
           })}
         </Container>
       </Container>
