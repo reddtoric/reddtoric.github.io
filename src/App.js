@@ -19,17 +19,17 @@ export default class App extends React.Component {
       {
         title: "About me",
         handleOnClick: () => this.scrollTo(this.aboutMeRef),
-        component: <AboutMe ref={this.aboutMeRef} />,
+        component: <AboutMe ref={this.aboutMeRef} key={this.title} />,
       },
       {
         title: "Skills",
         handleOnClick: () => this.scrollTo(this.skillsRef),
-        component: <Skills ref={this.skillsRef} />,
+        component: <Skills ref={this.skillsRef} key={this.title} />,
       },
       {
         title: "Projects",
         handleOnClick: () => this.scrollTo(this.projectsRef),
-        component: <Projects ref={this.projectsRef} />,
+        component: <Projects ref={this.projectsRef} key={this.title} />,
       },
     ];
   }
