@@ -34,7 +34,7 @@ export default [
         "https://lh3.googleusercontent.com/s9iBV20c7CBHeE65Xq_gYD2XdWerfiwX4eg6A550woHjErDpNVCeOA2VglGaIbl0rOwj=s180",
     },
     title: "CPR Now",
-    description: "Chest compression-only CPR assistant.",
+    description: "Chest compression-only CPR assistant for mobile. Assisting user with audio and visual cues in 2 button presses.",
     links: {
       git: "https://github.com/reddtoric/CprNow",
       playstore:
