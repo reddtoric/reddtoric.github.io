@@ -4,6 +4,7 @@ import {
   mdiDotNet,
   mdiDatabase,
   mdiGit,
+  mdiUnity,
 } from "@mdi/js";
 
 export default [
@@ -29,6 +30,10 @@ export default [
   },
   {
     icon: mdiGit,
-    skill: "Git",
+    skill: "Git • GitHub",
+  },
+  {
+	  icon: mdiUnity,
+	  skill: "Unity",
   },
 ];
