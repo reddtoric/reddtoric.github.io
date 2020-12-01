@@ -33,7 +33,7 @@ export default [
     skill: "Git • GitHub",
   },
   {
-	  icon: mdiUnity,
-	  skill: "Unity",
+    icon: mdiUnity,
+    skill: "Unity",
   },
 ];
