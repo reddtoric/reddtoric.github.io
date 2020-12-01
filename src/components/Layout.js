@@ -29,7 +29,7 @@ export default React.forwardRef((props, ref) => {
   const classes = useStyles();
 
   return (
-    <Box pb={20} ref={ref}>
+    <Box className="layout" pb={10} ref={ref}>
       <Box
         component="h2"
         className={
