@@ -22,6 +22,7 @@ export default [
       src: "icon.png",
     },
     title: "EdDevs.com",
+    tags: "#reactjs #css #material-ui",
     description: "Portfolio of applications I developed.",
     links: {
       git: "https://github.com/reddtoric/reddtoric.github.io",
@@ -34,6 +35,7 @@ export default [
         "https://lh3.googleusercontent.com/s9iBV20c7CBHeE65Xq_gYD2XdWerfiwX4eg6A550woHjErDpNVCeOA2VglGaIbl0rOwj=s180",
     },
     title: "CPR Now",
+    tags: "#xamarin #dotnet-standard #csharp #newtonsoft-json",
     description:
       "Chest compression-only CPR assistant for mobile. Assisting user with audio and visual cues in 2 button presses.",
     links: {
@@ -49,6 +51,7 @@ export default [
         "https://lh3.googleusercontent.com/fNGvBXod3Vbu8zH898lWESrmWolb0JP2iutOSZ4D9kTHjLNc3R3kynjeNBZ7tq9n_w=s180",
     },
     title: "Disorientis",
+    tags: "#unity #dotnet #csharp",
     description:
       "A single-player high-score top-down mobile game with a tricky controller.",
     links: {
@@ -62,6 +65,7 @@ export default [
       src: "snake-icon.png",
     },
     title: "Two-player Snake",
+    tags: "#cpp #arduino #cad #pcb-design",
     description:
       "Classic snake game on Arduino Mega with 32x32 LED matrix, custom shield and two 4-button controllers.",
     links: {
@@ -70,6 +74,7 @@ export default [
   },
   {
     title: "Candy Crush",
+    tags: "#javascript #html #css #jquery",
     description:
       "Simple version of Candy Crush for web. Functional on touchscreen.",
     links: {
@@ -79,6 +84,7 @@ export default [
   },
   {
     title: ".NET + React Blog",
+    tags: "#dotnet-core #asp-dot-net-core #reactjs",
     description:
       "Blog using RESTful API endpoints to allow users and admins to create, edit, delete, comment, and like posts.",
     links: {
@@ -88,6 +94,7 @@ export default [
   },
   {
     title: "PieShell",
+    tags: "#reactjs #css #sass #html",
     description: "A pie menu-driven GUI for Linux/UNIX shell command assembly.",
     links: {
       git: "https://github.com/uicgrog/pieshell",

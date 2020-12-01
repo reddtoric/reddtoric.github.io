@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
   },
+  tagsRowLayout: {
+    margin: theme.spacing(2, 1),
+  },
   descriptionRowLayout: {
     margin: theme.spacing(2, 1),
     height: theme.spacing(12),
@@ -81,6 +84,7 @@ export default function ProjectCard({ project }) {
       <TitleRow project={project} />
       <LinksRow links={project.links} />
 
+      <TagsRow tags={project.tags} />
       <Box className={classes.descriptionRowLayout}>{project.description}</Box>
 
       <ReadMoreRow project={project} />
@@ -161,6 +165,11 @@ function LinksRow(props) {
       <ButtonIconGroup buttons={links} />
     </Box>
   );
+}
+
+function TagsRow({ tags }) {
+  const classes = useStyles();
+  return <Box className={classes.tagsRowLayout}>{`${tags}`}</Box>;
 }
 
 function ReadMoreRow({ project }) {
