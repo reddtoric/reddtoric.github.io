@@ -15,7 +15,14 @@ export default [
           (optional) preview: "preview link",
       },
   },
-*/
+*/{
+    title: "Skip YT Ads",
+    tags: "#python3 #pyautogui #pynput #python-imagesearch",
+    description: "Don't want to use AdBlockers? Skip annoyingly long Youtube Ads with this python script!",
+    links: {
+      git: "https://github.com/reddtoric/SkipYTAds",
+    },
+  },
   {
     avatar: {
       alt: "EdDevs.com icon",
