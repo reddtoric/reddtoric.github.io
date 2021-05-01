@@ -20,8 +20,8 @@
   "plugins": ["react", "simple-import-sort", "import", "prettier"],
   "rules": {
     "require-jsdoc": "off",
-    "react/prop-types": "off",
-    "react/display-name": "off",
+    "react/prop-types": "warn",
+    "react/display-name": "warn",
     "prettier/prettier": [
       "warn",
       {
