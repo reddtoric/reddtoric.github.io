@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "google", "prettier", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "simple-import-sort", "import", "prettier"],
+  "rules": {
+    "require-jsdoc": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "prettier/prettier": [
+      "warn",
+      {
+        "singleQuote": true,
+        "printWidth": 140,
+        "proseWrap": "always",
+        "editor.formatOnSave": true,
+        "arrowParens": "always",
+        "tabWidth": 2,
+        "useTabs": false,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "jsxSingleQuote": true,
+        "semi": true
+      }
+    ],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
+  },
+  "overrides": [
+    {
+      "files": "server/**/*.js",
+      "env": { "node": true },
+      "rules": {
+        "simple-import-sort/imports": "off",
+        "import/order": ["error", { "newlines-between": "always" }],
+        "quote-props": [
+          "error",
+          "as-needed",
+          {
+            "keywords": true,
+            "unnecessary": false
+          }
+        ]
+      }
+    }
+  ]
+}

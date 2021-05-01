@@ -1,59 +1,72 @@
-import React from "react";
-import Container from "@material-ui/core/Container";
-import Intro from "sections/Intro";
-import AboutMe from "sections/AboutMe";
-import Skills from "sections/Skills";
-import Projects from "sections/Projects";
+import Container from '@material-ui/core/Container';
+import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import About from 'sections/About';
+import Intro from 'sections/Intro';
+import Projects from 'sections/Projects';
+import Skills from 'sections/Skills';
+
+import { GlobalStyles } from './GlobalStyles';
 
 // Render website with all 4 sections
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
+const useStyles = makeStyles((theme) => ({
+  '@global': {
+    body: {
+      margin: 0,
+      fontFamily: 'Open Sans, sans-serif',
+      backgroundColor: GlobalStyles.bgColor,
+      color: GlobalStyles.textColor,
+    },
+  },
+  runner: {
+    backgroundColor: GlobalStyles.runnerBgColor,
+  },
+}));
 
-    this.aboutMeRef = React.createRef();
-    this.skillsRef = React.createRef();
-    this.projectsRef = React.createRef();
+export default () => {
+  const introRef = React.useRef();
+  const aboutRef = React.useRef();
+  const skillsRef = React.useRef();
+  const projectsRef = React.useRef();
+  const classes = useStyles();
 
-    this.sections = [
-      {
-        title: "About me",
-        handleOnClick: () => this.scrollTo(this.aboutMeRef),
-        component: <AboutMe ref={this.aboutMeRef} key={this.title} />,
-      },
-      {
-        title: "Skills",
-        handleOnClick: () => this.scrollTo(this.skillsRef),
-        component: <Skills ref={this.skillsRef} key={this.title} />,
-      },
-      {
-        title: "Projects",
-        handleOnClick: () => this.scrollTo(this.projectsRef),
-        component: <Projects ref={this.projectsRef} key={this.title} />,
-      },
-    ];
-  }
+  const sections = [
+    {
+      title: 'About me',
+      handleOnClick: () => scrollTo(aboutRef),
+      component: <About ref={aboutRef} key='1' />,
+    },
+    {
+      title: 'Skills',
+      handleOnClick: () => scrollTo(skillsRef),
+      component: <Skills ref={skillsRef} key='2' />,
+    },
+    {
+      title: 'Projects',
+      handleOnClick: () => scrollTo(projectsRef),
+      component: <Projects ref={projectsRef} key='3' />,
+    },
+  ];
 
-  scrollTo(ref) {
+  const scrollTo = (ref) => {
     if (ref.current) {
       ref.current.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
+        behavior: 'smooth',
+        block: 'nearest',
       });
     }
-  }
+  };
 
-  render() {
-    return (
-      <Container className="runner-bg-color">
-        <Container maxWidth="md">
-          <Intro sections={this.sections} />
+  return (
+    <Container className={classes.runner}>
+      <Container maxWidth='md'>
+        <Intro ref={introRef} sections={sections} />
 
-          {this.sections.map((section) => {
-            return section.component;
-          })}
-        </Container>
+        {sections.map((section) => {
+          return section.component;
+        })}
       </Container>
-    );
-  }
-}
+    </Container>
+  );
+};
