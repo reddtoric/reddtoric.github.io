@@ -1,28 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.66a8c18d.chunk.css",
-    "main.js": "/static/js/main.fbba8f6d.chunk.js",
-    "main.js.map": "/static/js/main.fbba8f6d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.60afb790.js",
-    "runtime-main.js.map": "/static/js/runtime-main.60afb790.js.map",
-    "static/css/2.6471c21a.chunk.css": "/static/css/2.6471c21a.chunk.css",
-    "static/js/2.2adc155c.chunk.js": "/static/js/2.2adc155c.chunk.js",
-    "static/js/2.2adc155c.chunk.js.map": "/static/js/2.2adc155c.chunk.js.map",
+    "main.js": "/static/js/main.997b13a5.chunk.js",
+    "main.js.map": "/static/js/main.997b13a5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1f6fcabd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1f6fcabd.js.map",
+    "static/css/2.4b1abd06.chunk.css": "/static/css/2.4b1abd06.chunk.css",
+    "static/js/2.1d1a9328.chunk.js": "/static/js/2.1d1a9328.chunk.js",
+    "static/js/2.1d1a9328.chunk.js.map": "/static/js/2.1d1a9328.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.462f09025b9c8d1ea987447224a60d1e.js": "/precache-manifest.462f09025b9c8d1ea987447224a60d1e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.6471c21a.chunk.css.map": "/static/css/2.6471c21a.chunk.css.map",
-    "static/css/main.66a8c18d.chunk.css.map": "/static/css/main.66a8c18d.chunk.css.map",
-    "static/js/2.2adc155c.chunk.js.LICENSE.txt": "/static/js/2.2adc155c.chunk.js.LICENSE.txt",
-    "static/media/400-normal.css": "/static/media/open-sans-vietnamese-400-normal.c080b58a.woff2",
-    "static/media/800-normal.css": "/static/media/open-sans-vietnamese-800-normal.37400e9f.woff2",
-    "static/media/index.css": "/static/media/roboto-mono-vietnamese-400-normal.df37c0e9.woff2"
+    "static/css/2.4b1abd06.chunk.css.map": "/static/css/2.4b1abd06.chunk.css.map",
+    "static/js/2.1d1a9328.chunk.js.LICENSE.txt": "/static/js/2.1d1a9328.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/roboto-mono-vietnamese-400-normal.2f4115e7.woff2",
+    "static/media/800.css": "/static/media/open-sans-vietnamese-800-normal.dd2c5626.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.60afb790.js",
-    "static/css/2.6471c21a.chunk.css",
-    "static/js/2.2adc155c.chunk.js",
-    "static/css/main.66a8c18d.chunk.css",
-    "static/js/main.fbba8f6d.chunk.js"
+    "static/js/runtime-main.1f6fcabd.js",
+    "static/css/2.4b1abd06.chunk.css",
+    "static/js/2.1d1a9328.chunk.js",
+    "static/js/main.997b13a5.chunk.js"
   ]
 }
