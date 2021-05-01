@@ -1,12 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./ThemeStyles.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
-import "fontsource-roboto-mono";
-import "fontsource-open-sans/400-normal.css";
-import "fontsource-open-sans/800-normal.css";
-import { StylesProvider } from "@material-ui/core/styles";
+import '@fontsource/roboto-mono';
+import '@fontsource/open-sans';
+import '@fontsource/open-sans/800.css';
+
+import { StylesProvider } from '@material-ui/core/styles';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,7 +15,7 @@ ReactDOM.render(
       <App />
     </StylesProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

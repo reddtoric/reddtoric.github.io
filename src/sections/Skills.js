@@ -1,24 +1,21 @@
-import React from "react";
-import Box from "@material-ui/core/Box";
-import Layout from "components/Layout";
-import SkillCard from "components/SkillCard";
-import DataSkills from "data/Data-Skills";
+import CardContainer from 'components/generics/CardContainer';
+import Section from 'components/generics/Section';
+import SkillCard from 'components/SkillCard';
+import DataSkills from 'data/Data-Skills';
+import React from 'react';
 
 // My Skills section
 
-export default React.forwardRef((props, ref) => {
+export default React.forwardRef(Skills);
+
+function Skills(props, ref) {
   return (
-    <Layout
-      title="Skills"
-      hideTitle
-      description="Here are technologies I like to use"
-      ref={ref}
-    >
-      <Box display="flex" flexDirection="row" flexWrap="wrap">
+    <Section heading='Skills' hideHeading description='Here are technologies I like to use' ref={ref}>
+      <CardContainer>
         {DataSkills.map((skill, index) => (
           <SkillCard key={index} skill={skill} />
         ))}
-      </Box>
-    </Layout>
+      </CardContainer>
+    </Section>
   );
-});
+}

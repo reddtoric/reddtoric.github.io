@@ -1,45 +1,55 @@
-import React from "react";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
-import Icon from "@mdi/react";
-import CustomCard from "components/CustomCard";
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import Icon from '@mdi/react';
+import CustomCard from 'components/generics/CustomCard';
+import { GlobalStyles } from 'GlobalStyles';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
-  skillCardLayout: {
-    display: "flex",
-    flexDirection: "row",
+  skillCard: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
+  icon: {
+    color: GlobalStyles.primaryColor,
   },
   skill: {
+    fontFamily: GlobalStyles.monoFont,
     marginLeft: theme.spacing(1),
   },
 }));
 
 /*
-  Summary: Return Skill card using Custom Card
-  Props:  
-    skill: {
-      icon: material design icon,
-      skill: "skill name",
-    }
-*/
+ * Summary: Skill Card
+ * Props:
+ *      skill: {
+ *          icon: material design icon,
+ *          name: string
+ *      }
+ */
 
-export default (props) => {
+export default SkillCard;
+
+function SkillCard({ skill }) {
   const classes = useStyles();
 
   return (
     <CustomCard>
-      <Box className={classes.skillCardLayout}>
-        <Icon path={props.skill.icon} className="primary-color" size={1} />
+      <Box className={classes.skillCard}>
+        <Icon className={classes.icon} path={skill.icon} size={1} />
 
-        <Typography
-          variant="body1"
-          component="h3"
-          className={`${classes.skill} mono-font`}
-        >
-          {props.skill.skill}
+        <Typography variant='body1' component='h3' className={classes.skill}>
+          {skill.name}
         </Typography>
       </Box>
     </CustomCard>
   );
+}
+
+SkillCard.propTypes = {
+  skill: PropTypes.object,
+  icon: PropTypes.symbol,
+  name: PropTypes.string,
 };

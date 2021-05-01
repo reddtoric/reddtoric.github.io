@@ -1,39 +1,32 @@
-import {
-  mdiLanguageCsharp,
-  mdiLanguageHtml5,
-  mdiDotNet,
-  mdiDatabase,
-  mdiGit,
-  mdiUnity,
-} from "@mdi/js";
+import { mdiBlenderSoftware, mdiDotNet, mdiGit, mdiLanguageCsharp, mdiLanguageHtml5, mdiLanguagePython, mdiUnity } from '@mdi/js';
 
 export default [
   {
     icon: mdiLanguageCsharp,
-    skill: "C#",
+    name: 'C#',
   },
   {
     icon: mdiLanguageHtml5,
-    skill: "HTML • CSS/Sass • JavaScript",
+    name: 'HTML • CSS/Sass • JavaScript',
   },
   {
     icon: mdiDotNet,
-    skill: ".NET Core • .NET Framework",
-  },
-  {
-    icon: mdiDotNet,
-    skill: "ASP.NET Core • MVC",
-  },
-  {
-    icon: mdiDatabase,
-    skill: "Microsoft SQL Server",
+    name: '.NET Core • .NET Framework',
   },
   {
     icon: mdiGit,
-    skill: "Git • GitHub",
+    name: 'Git • GitHub',
   },
   {
     icon: mdiUnity,
-    skill: "Unity",
+    name: 'Unity',
+  },
+  {
+    icon: mdiLanguagePython,
+    name: 'Python',
+  },
+  {
+    icon: mdiBlenderSoftware,
+    name: 'Blender',
   },
 ];
