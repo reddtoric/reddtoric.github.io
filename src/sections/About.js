@@ -1,4 +1,5 @@
 import Box from '@material-ui/core/Box';
+import { mdiAlphaEBox, mdiGithub, mdiStackOverflow } from '@mdi/js';
 import Icon from '@mdi/react';
 import InlineLink from 'components/generics/InlineLink';
 import Section from 'components/generics/Section';
@@ -13,6 +14,23 @@ export default React.forwardRef(About);
 function About(props, ref) {
   const etsyUrl = 'https://etsy.com/shop/meltandcool';
   const igUrl = 'https://instagram.com/meltandcool';
+  const links = [
+    {
+      name: 'GitHub',
+      icon: mdiGithub,
+      url: 'https://github.com/reddtoric',
+    },
+    {
+      name: 'Stack Overflow',
+      icon: mdiStackOverflow,
+      url: 'https://stackoverflow.com/users/6546317/reddtoric',
+    },
+    {
+      name: 'Exercism',
+      icon: mdiAlphaEBox,
+      url: 'https://exercism.io/profiles/reddtoric',
+    },
+  ];
 
   return (
     <Section heading='About me' hideHeading description='' hideDescription ref={ref}>
@@ -36,8 +54,15 @@ function About(props, ref) {
         Looking for gift ideas? Check out my 3D printed gifts on <InlineLink href={etsyUrl}>Etsy: Melt and Cool</InlineLink> and{' '}
         <InlineLink href={igUrl}>@MeltAndCool</InlineLink>.
       </Box>
-      {/*
-            Looking for gift ideas? Check out my 3D printed gifts*/}
+      <Box component='p'>
+        {links.map((link, index) => (
+          <Box key={index} component='span' display='block' mx={1}>
+            <InlineLink href={link.url}>
+              <Icon path={link.icon} size='1em' color={GlobalStyles.primaryColor} /> {link.name}
+            </InlineLink>
+          </Box>
+        ))}
+      </Box>
     </Section>
   );
 }
