@@ -1,5 +1,5 @@
 import Box from '@material-ui/core/Box';
-import { mdiAlphaEBox, mdiGithub, mdiStackOverflow } from '@mdi/js';
+import { mdiAlphaEBox, mdiGithub, mdiLinkedin, mdiStackOverflow } from '@mdi/js';
 import Icon from '@mdi/react';
 import InlineLink from 'components/generics/InlineLink';
 import Section from 'components/generics/Section';
@@ -29,6 +29,11 @@ function About(props, ref) {
       name: 'Exercism',
       icon: mdiAlphaEBox,
       url: 'https://exercism.io/profiles/reddtoric',
+    },
+    {
+      name: 'LinkedIn',
+      icon: mdiLinkedin,
+      url: 'https://www.linkedin.com/in/edward-hughes/',
     },
   ];
 

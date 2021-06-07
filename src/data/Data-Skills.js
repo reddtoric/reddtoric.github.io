@@ -1,4 +1,13 @@
-import { mdiBlenderSoftware, mdiDotNet, mdiGit, mdiLanguageCsharp, mdiLanguageHtml5, mdiLanguagePython, mdiUnity } from '@mdi/js';
+import {
+  mdiBlenderSoftware,
+  mdiDotNet,
+  mdiFileCad,
+  mdiGit,
+  mdiLanguageCsharp,
+  mdiLanguageHtml5,
+  mdiLanguagePython,
+  mdiUnity,
+} from '@mdi/js';
 
 export default [
   {
@@ -28,5 +37,9 @@ export default [
   {
     icon: mdiBlenderSoftware,
     name: 'Blender',
+  },
+  {
+    icon: mdiFileCad,
+    name: 'Autodesk Fusion 360',
   },
 ];
