@@ -23,25 +23,18 @@ function Projects(props, ref) {
     for (const [index, repo] of tmpRepos.entries()) {
       const url = `https://raw.githubusercontent.com/${repo.full_name}/${repo.default_branch}/meta.json`;
       await axios
-        .head(url)
-        .then(async () => {
-          await axios
-            .get(url)
-            .then((response) => {
-              const match = tmpRepos[index];
+        .get(url)
+        .then((response) => {
+          const match = tmpRepos[index];
 
-              const adjustedEntry = {
-                ...match,
-                ...response.data,
-              };
+          const adjustedEntry = {
+            ...match,
+            ...response.data,
+          };
 
-              tmpRepos[index] = adjustedEntry;
+          tmpRepos[index] = adjustedEntry;
 
-              // console.log(tmpRepos[index]);
-            })
-            .catch((error) => {
-              // Intentionally empty
-            });
+          // console.log(tmpRepos[index]);
         })
         .catch((error) => {
           // Intentionally empty
