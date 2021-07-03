@@ -11,6 +11,7 @@ export default React.forwardRef(Projects);
 
 function Projects(props, ref) {
   const [repos, setRepos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const fetchRepos = async () => {
     // Fetch git projects with git api
@@ -49,6 +50,7 @@ function Projects(props, ref) {
     });
 
     setRepos(x);
+	setIsLoading(false);
   };
 
   useEffect(() => {
@@ -58,7 +60,9 @@ function Projects(props, ref) {
   return (
     <Section heading='Projects' hideHeading description="And here are cool apps, games, and other things I've built" ref={ref}>
       <CardContainer>
-        {repos.map((repo, index) => {
+        {isLoading ?
+		<div>Loading...</div>
+		: repos.map((repo, index) => {
           if (!repo.hide) {
             return <ProjectCard key={index} project={repo} />;
           }
