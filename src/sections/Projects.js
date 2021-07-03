@@ -16,7 +16,8 @@ function Projects(props, ref) {
     // Fetch git projects with git api
     const reposResponse = await axios.get(`https://api.github.com/users/reddtoric/repos`);
 
-    const tmpRepos = [...reposResponse.data];
+	// Filter out forked repos
+    const tmpRepos = reposResponse.data.filter(repo => !repo.fork);
 
     // Get meta.json data from within respective repo (if any)
     // using info from the fetched git projects
