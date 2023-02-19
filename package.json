@@ -19,16 +19,24 @@
     "styled-components": "^5.2.3"
   },
   "scripts": {
-    "dev": "concurrently --kill-others \"npm run start\" \"npm run format\"",
-    "deploy": "npm run build && gh-pages -d build",
-    "_comment1": "----- Default Scripts -----",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "_comment2": "----- Formating Scripts (prettier not needed) -----",
     "format": "watch \"npm run format-eslint\" src",
-    "format-prettier": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
-    "format-eslint": "eslint src --fix"
+    "format-eslint": "eslint src --fix",
+    "dev": "concurrently \"npm run start\" \"npm run format\"",
+    "pub": "npm run build && gh-pages -d build"
+  },
+  "scriptsDescriptionsAndArchive": {
+    "start": "Start react app",
+    "build": "Build react app",
+    "format": "Watch changes while developing and format",
+    "format-eslint": "Formatting with eslint",
+    "dev": "Developing with web browser and watch changes",
+    "pub": "Publish",
+    "_": "----- Archive below -----",
+    "deploy": "npm run build && gh-pages -d build",
+    "test": "react-scripts test",
+    "format-prettier": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "eslintConfig": {
     "extends": "react-app"
