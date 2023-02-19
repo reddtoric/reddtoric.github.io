@@ -1,6 +1,6 @@
 {
   "name": "reddtoric.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fontsource/open-sans": "^4.2.2",
@@ -32,9 +32,8 @@
     "format": "Watch changes while developing and format",
     "format-eslint": "Formatting with eslint",
     "dev": "Developing with web browser and watch changes",
-    "pub": "Publish",
+    "pub": "Publish to 'gh-pages' branch",
     "_": "----- Archive below -----",
-    "deploy": "npm run build && gh-pages -d build",
     "test": "react-scripts test",
     "format-prettier": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },

@@ -1,4 +1,5 @@
 import {
+  mdiAngular,
   mdiBlenderSoftware,
   mdiDotNet,
   mdiFileCad,
@@ -6,6 +7,7 @@ import {
   mdiLanguageCsharp,
   mdiLanguageHtml5,
   mdiLanguagePython,
+  mdiLanguageTypescript,
   mdiUnity,
 } from '@mdi/js';
 
@@ -16,15 +18,23 @@ export default [
   },
   {
     icon: mdiLanguageHtml5,
-    name: 'HTML • CSS/Sass • JavaScript',
+    name: 'HTML • CSS/Sass',
   },
   {
     icon: mdiDotNet,
     name: '.NET Core • .NET Framework',
   },
   {
+    icon: mdiLanguageTypescript,
+    name: 'TypeScript • JavaScript'
+  },
+  {
     icon: mdiGit,
     name: 'Git • GitHub',
+  },
+  {
+    icon: mdiAngular,
+    name: 'Angular'
   },
   {
     icon: mdiUnity,
