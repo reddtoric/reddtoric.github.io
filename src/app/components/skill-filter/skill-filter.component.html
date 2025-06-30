@@ -1,0 +1,25 @@
+<h2>Skills:</h2>
+<button mat-stroked-button
+	id="clear-all"
+	type="button"
+	(click)="clearFilters()"
+	[disabled]="selectedSkills.length === 0">
+	Clear All
+</button>
+<mat-chip-listbox [multiple]="true"
+	[(ngModel)]="selectedSkills">
+	@for (skill of skills; track skill.key || skill.label) {
+		<mat-chip-option [value]="skill"
+				(selectionChange)="onSkillSelectionChange(skill, $event)">
+			<mat-chip-avatar>
+			@if (skill.icon) {
+				<img [src]="skill.icon"
+					[alt]="skill.label"
+					width="18"
+					height="18"/>
+			}
+			</mat-chip-avatar>
+			{{skill.label}}
+		</mat-chip-option>
+	}
+</mat-chip-listbox>
