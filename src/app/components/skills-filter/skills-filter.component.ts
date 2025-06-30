@@ -10,7 +10,7 @@ import { SkillsProvider } from 'app/interfaces/skills-provider.interface';
 import { Skill } from 'app/models/skill.interface';
 
 @Component({
-	selector: 'skill-filter',
+	selector: 'skills-filter',
 	standalone: true,
 	imports: [
 		CommonModule,
@@ -20,10 +20,10 @@ import { Skill } from 'app/models/skill.interface';
 		MatChipAvatar,
 		MatButtonModule
 	],
-	templateUrl: 'skill-filter.component.html',
-	styleUrl: 'skill-filter.component.scss',
+	templateUrl: 'skills-filter.component.html',
+	styleUrl: 'skills-filter.component.scss',
 })
-export class SkillFilterComponent {
+export class SkillsFilterComponent {
 	src = input.required<string>()
 
 	private logger = inject(LoggerService);
