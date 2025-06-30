@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "key": "project1",
+      "title": "Project 1",
+      "mdPath": "/assets/projects/project1/index.md"
+    },
+    {
+      "key": "project2",
+      "title": "Project 2",
+      "mdPath": "/assets/projects/project2/index.md"
+    }
+  ]
+}
