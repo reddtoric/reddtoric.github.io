@@ -1,0 +1,59 @@
+{
+  "filters": [
+    {
+      "key": "c-sharp",
+      "label": "C#",
+      "icon": "assets/skill-filter/icons/language-csharp.svg"
+    },
+    {
+      "key": "dotnet",
+      "label": ".NET Core/.NET Framework",
+      "icon": "assets/skill-filter/icons/dot-net.svg"
+    },
+    {
+      "key": "typescript",
+      "label": "TypeScript",
+      "icon": "assets/skill-filter/icons/language-typescript.svg"
+    },
+    {
+      "key": "javascript",
+      "label": "JavaScript",
+      "icon": "assets/skill-filter/icons/language-javascript.svg"
+    },
+    {
+      "key": "html",
+      "label": "HTML",
+      "icon": "assets/skill-filter/icons/language-html5.svg"
+    },
+    {
+      "key": "css",
+      "label": "CSS/SCSS",
+      "icon": "assets/skill-filter/icons/language-css3.svg"
+    },
+    {
+      "key": "angular",
+      "label": "Angular",
+      "icon": "assets/skill-filter/icons/angular.svg"
+    },
+    {
+      "key": "sql",
+      "label": "SQL/T-SQL",
+      "icon": "assets/skill-filter/icons/sql-server.png"
+    },
+    {
+      "key": "vb-dotnet",
+      "label": "VB.NET",
+      "icon": "assets/skill-filter/icons/vb-file.png"
+    },
+    {
+      "key": "3d-printing",
+      "label": "3D Printing",
+      "icon": "assets/skill-filter/icons/printer-3d-nozzle.svg"
+    },
+    {
+      "key": "cad",
+      "label": "CAD",
+      "icon": "assets/skill-filter/icons/cad.png"
+    }
+  ]
+}
