@@ -1,0 +1,12 @@
+@if (renderedHtml()) {
+	<div 
+		[innerHTML]="renderedHtml()"
+		class="markdown-content">
+	</div>
+} @else {
+	@if (error()){
+		<p class="error">{{ error() }}</p>
+	} @else {
+		<p>Loading markdown...</p>
+	}
+}
