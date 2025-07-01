@@ -3,12 +3,80 @@
     {
       "key": "project1",
       "title": "Project 1",
-      "mdPath": "/assets/projects/project1/index.md"
+      "previewImg": "https://placehold.co/600x400",
+      "mdPath": "assets/projects/project1/index.md"
     },
     {
       "key": "project2",
       "title": "Project 2",
-      "mdPath": "/assets/projects/project2/index.md"
+      "previewImg": "https://placehold.co/400",
+      "mdPath": "assets/projects/project2/index.md"
+    },
+    {
+      "key": "project3",
+      "title": "Project 3",
+      "previewImg": "https://placehold.co/600x400",
+      "mdPath": "assets/projects/project1/index.md"
+    },
+    {
+      "key": "project4",
+      "title": "Project 4",
+      "previewImg": "https://placehold.co/400",
+      "mdPath": "assets/projects/project2/index.md"
+    },
+    {
+      "key": "project5",
+      "title": "Project 5",
+      "previewImg": "https://placehold.co/600x400",
+      "mdPath": "assets/projects/project1/index.md"
+    },
+    {
+      "key": "project6",
+      "title": "Project 6",
+      "previewImg": "https://placehold.co/400",
+      "mdPath": "assets/projects/project2/index.md"
+    },
+    {
+      "key": "project7",
+      "title": "Project 7",
+      "previewImg": "https://placehold.co/600x400",
+      "mdPath": "assets/projects/project1/index.md"
+    },
+    {
+      "key": "project8",
+      "title": "Project 8",
+      "previewImg": "https://placehold.co/400",
+      "mdPath": "assets/projects/project2/index.md"
+    },
+    {
+      "key": "project9",
+      "title": "Project 9",
+      "previewImg": "https://placehold.co/400",
+      "mdPath": "assets/projects/project2/index.md"
+    },
+    {
+      "key": "project10",
+      "title": "Project 10",
+      "previewImg": "https://placehold.co/400",
+      "mdPath": "assets/projects/project2/index.md"
+    },
+    {
+      "key": "project11",
+      "title": "Project 11",
+      "previewImg": "https://placehold.co/400",
+      "mdPath": "assets/projects/project2/index.md"
+    },
+    {
+      "key": "project12",
+      "title": "Project 12",
+      "previewImg": "https://placehold.co/400",
+      "mdPath": "assets/projects/project2/index.md"
+    },
+    {
+      "key": "project13",
+      "title": "Project 13",
+      "previewImg": "https://placehold.co/400",
+      "mdPath": "assets/projects/project2/index.md"
     }
   ]
 }

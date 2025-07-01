@@ -1,0 +1,28 @@
+<mat-grid-list
+	cols="4"
+	rowHeight="200px"
+	gutterSize="10px"
+	class="projects-grid">
+	
+	<mat-grid-tile
+		*ngFor="let project of projects; let i = index; trackBy: trackByKey"
+		[colspan]="getGridConfig(i).cols"
+		[rowspan]="getGridConfig(i).rows"
+		class="project-tile"
+		(click)="onProjectClick(project)">
+
+		<div class="tile-content">
+			<div class="image-container">
+				<img
+					[src]="project.previewImg || 'assets/images/default-project.jpg'"
+					[alt]="project.title"
+					class="project-image"
+					loading="lazy"/>
+			</div>
+			<div class="overlay">
+				<h3 class="project-title">{{ project.title }}</h3>
+			</div>
+		</div>
+
+	</mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,117 @@
+.projects-grid {
+	margin: 1rem 0;
+
+	@media (max-width: 768px) {
+		::ng-deep mat-grid-tile {
+			// Forces single column on mobile
+			grid-column-end: span 1 !important;
+		}
+	}
+}
+
+.project-tile {
+	cursor: pointer;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+	&:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+		.project-image {
+			transform: scale(1.05);
+		}
+
+		.overlay {
+			background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+		}
+	}
+
+	// Removes default Material styling
+	::ng-deep .mat-grid-tile-content {
+		padding: 0;
+	}
+}
+
+.tile-content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.project-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease-in-out;
+
+	// Fallback for missing images
+	&:not([src]),
+	&[src=""] {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&::before {
+			content: "📁";
+			font-size: 3rem;
+			color: white;
+		}
+	}
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+	padding: 1rem;
+	transition: background 0.3s ease-in-out;
+	display: flex;
+	align-items: flex-end;
+}
+
+.project-title {
+	color: white;
+	margin: 0;
+	font-size: 1.1rem;
+	font-weight: 600;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	line-height: 1.3;
+
+	// Handling long titles
+	display: -webkit-box;
+	line-clamp: 2;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// Loading state
+.projects-grid:empty {
+	&::after {
+		content: "Loading projects...";
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 200px;
+		color: #666;
+		font-style: italic;
+	}
+}
