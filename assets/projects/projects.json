@@ -4,79 +4,93 @@
       "key": "project1",
       "title": "Project 1",
       "previewImg": "https://placehold.co/600x400",
-      "mdPath": "assets/projects/project1/index.md"
+      "mdPath": "assets/projects/project1/index.md",
+      "skills": ["c-sharp", "dotnet"]
     },
     {
       "key": "project2",
       "title": "Project 2",
       "previewImg": "https://placehold.co/400",
-      "mdPath": "assets/projects/project2/index.md"
+      "mdPath": "assets/projects/project2/index.md",
+      "skills": ["typescript", "javascript", "angular"]
+      
     },
     {
-      "key": "project3",
-      "title": "Project 3",
-      "previewImg": "https://placehold.co/600x400",
-      "mdPath": "assets/projects/project1/index.md"
+      "key": "cpr-now",
+      "title": "CPR Now",
+      "previewImg": "https://camo.githubusercontent.com/ad5290dda830cea5d605e32f7ceb26eaa53df572ac4a2f16bbe3e0751f7c8075/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f346a6c4232425877347537725a6b6e32766b2f67697068792e676966",
+      "mdPath": "https://raw.githubusercontent.com/reddtoric/CprNow/refs/heads/master/README.md",
+      "skills": ["c-sharp","dotnet"]
     },
     {
       "key": "project4",
       "title": "Project 4",
       "previewImg": "https://placehold.co/400",
-      "mdPath": "assets/projects/project2/index.md"
+      "mdPath": "assets/projects/project2/index.md",
+      "skills": ["dotnet"]
     },
     {
       "key": "project5",
       "title": "Project 5",
       "previewImg": "https://placehold.co/600x400",
-      "mdPath": "assets/projects/project1/index.md"
+      "mdPath": "assets/projects/project1/index.md",
+      "skills": ["dotnet"]
     },
     {
       "key": "project6",
       "title": "Project 6",
       "previewImg": "https://placehold.co/400",
-      "mdPath": "assets/projects/project2/index.md"
+      "mdPath": "assets/projects/project2/index.md",
+      "skills": ["typescript", "javascript", "angular"]
     },
     {
       "key": "project7",
       "title": "Project 7",
       "previewImg": "https://placehold.co/600x400",
-      "mdPath": "assets/projects/project1/index.md"
+      "mdPath": "assets/projects/project1/index.md",
+      "skills": ["css"]
     },
     {
       "key": "project8",
       "title": "Project 8",
       "previewImg": "https://placehold.co/400",
-      "mdPath": "assets/projects/project2/index.md"
+      "mdPath": "assets/projects/project2/index.md",
+      "skills": []
     },
     {
       "key": "project9",
       "title": "Project 9",
       "previewImg": "https://placehold.co/400",
-      "mdPath": "assets/projects/project2/index.md"
+      "mdPath": "assets/projects/project2/index.md",
+      "skills": []
     },
     {
       "key": "project10",
       "title": "Project 10",
       "previewImg": "https://placehold.co/400",
-      "mdPath": "assets/projects/project2/index.md"
+      "mdPath": "assets/projects/project2/index.md",
+      "skills": []
     },
     {
       "key": "project11",
       "title": "Project 11",
       "previewImg": "https://placehold.co/400",
-      "mdPath": "assets/projects/project2/index.md"
+      "mdPath": "assets/projects/project2/index.md",
+      "skills": []
     },
     {
       "key": "project12",
       "title": "Project 12",
       "previewImg": "https://placehold.co/400",
-      "mdPath": "assets/projects/project2/index.md"
+      "mdPath": "assets/projects/project2/index.md",
+      "skills": []
     },
     {
       "key": "project13",
       "title": "Project 13",
       "previewImg": "https://placehold.co/400",
-      "mdPath": "assets/projects/project2/index.md"
+      "mdPath": "assets/projects/project2/index.md",
+      "skills": []
     }
   ]
 }
