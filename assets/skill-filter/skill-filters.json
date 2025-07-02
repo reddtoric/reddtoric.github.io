@@ -53,7 +53,12 @@
     {
       "key": "cad",
       "label": "CAD",
-      "icon": "assets/skill-filter/icons/cad.png"
+      "icon": "assets/skill-filter/icons/file-cad-box.svg"
+    },
+    {
+      "key": "other",
+      "label": "Other Projects",
+      "icon": "assets/skill-filter/icons/folder-multiple.svg"
     }
   ]
 }
