@@ -1,0 +1,33 @@
+h1 {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-weight: var(--h1-font-weight);
+	font-size: var(--h1-font-size);
+	text-transform: uppercase;
+}
+
+.main-container {
+	display: flex;
+	align-items: center; /* center vertically */
+	justify-content: center; /* center horizontally */
+	height: 100%;
+	margin: auto;
+	transform: translateY(-20px);
+}
+
+.vertical-stack {
+	display: flex;
+	flex-direction: column;
+}
+
+.tech-skills {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center; /* center horizontally */
+	gap: 20px;
+	color: var(--secondary-font-color);
+	font-size: var(--small-font-size);
+	list-style: none;
+}

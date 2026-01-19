@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@use "theme/variables" as *;
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	font-size: var(--primary-font-size);
+	font-family: var(--primary-font-family);
+	color: var(--primary-font-color);
+	background-color: var(--page-background-color);
+}
